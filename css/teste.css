@@ -1,0 +1,252 @@
+
+
+
+.container {
+    width: 1366px;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+
+.centerText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 915.7px;
+    height: 734.58px;
+    /*width: 67.03%;
+    height: 95.65%;*/
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doLogin {
+    width: 665.25px;
+    height: 281.60px;
+    /*width: 72.65%;
+    height: 38.33%;*/
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText form {
+    width: 665.25px;
+    height: 281.60px;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 715.41px;
+    height: 312.88px;
+    /*width: 78.13%;
+    height: 55.35%;*/
+}
+
+.logo {
+    width: 715.41px;
+    height: 284.44px;
+    /*width: 1005.5px;
+    height: 88.89%;*/
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo h2 {
+    margin: 0 0 0 0;
+    padding: 0;
+
+    width: 715.41px;
+    height: 28.44px;
+    /*width: 100%;
+    height: 8.89%;*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.84rem;
+
+    color: #000000;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 665.25px;
+    height: 281.60px;
+    /*width: 100%;
+    height: 100%;*/
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 0 0;
+
+    width: 665.25px;
+    height: 46.93px;
+    /*width: 100%;
+    height: 16.67%;*/
+}
+
+.username label {
+    margin: 13px 0 13px 0;
+    /*margin: 19.7% 0 19.7% 0;*/
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    width: 133.76px;
+    height: 28.44px;
+    /*width: 20.11%;
+    height: 60.6%;*/
+    
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.84rem;
+    line-height: 1.51rem;
+
+    color: #000000;
+}
+
+.textboxusername {
+    width: 522.95px;
+    height: 46.93px;
+    /*width: 78.60%;
+    height: 100%;*/ 
+
+    background: #FFFFFF;
+    border: 1.42px solid #000000;
+    border-radius: 28.44px;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 0 0;
+
+    width: 665.25px;
+    height: 46.93px;
+    /*width: 100%;
+    height: 16.67%;*/
+}
+
+.password label {
+    margin: 9.24px 0 9.24px 0;
+    /*margin: 19.7% 0 19.7% 0;*/
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    width: 133.76px;
+    height: 28.44px;
+    /*width: 20.11%;
+    height: 60.6%;*/
+    
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.84rem;
+    line-height: 1.51rem;
+
+    color: #000000;
+}
+
+.textboxpassword {
+    width: 522.95px;
+    height: 46.93px;
+    /*width: 78.60%;
+    height: 100%;*/
+
+    background: #FFFFFF;
+    border: 1.42px solid #000000;
+    border-radius: 28.44px;
+}
+
+.entrar{
+    width: 166.31px;
+    height: 46.93px;
+    /*width: 25%;
+    height: 16.67%;*/
+
+    background-color: #04AA6D;
+    border: 3px solid #000000;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.84rem;
+    line-height: 1.51rem;
+}
+
+.criarConta {
+    width: 332.63px;
+    height: 46.93px;
+    /*width: 50%;
+    height: 16.67%;*/
+
+    background-color: #FFD666;
+    border: 3px solid #000000;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.84rem;
+    line-height: 1.51rem;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -330.66px;
+
+    width: 1366px;
+    height: 364.08px;
+    /*width: 100%;
+    height: 47.41%;*/
+}
+
+.dogineo1 {
+    width: 364.08px;
+    height: 364.08px;
+    /*width: 26.67%;
+    height: 100%;*/
+}
+
+.dogineo2 {
+    width: 364.08px;
+    height: 364.08px;
+    /*width: 26.67%;
+    height: 100%;*/
+}
