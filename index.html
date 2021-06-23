@@ -15,33 +15,38 @@
     <body>
         <div class="container">
             <div class="centerText">
-                <div id="titulo" class="titulo">
+                <div class="titulo">
                     <img class="logo" src="images/LogoAPP.png" alt="Logo do APP">
 
                     <h2>Adoção de cães</h2>
                 </div>
-
-                <div class="login">
-                    <div class="username">
-                        <p>Login:</p>
-                        <div class="textboxusername"></div>
-                    </div>
-
-                    <div class="password">
-                        <p>Senha:</p>
-                        <div class="textboxpassword"></div>
-                    </div>
-                </div>
+                <section class="doLogin">
+                    <form action="">
+                        <div class="login">
+                            <div class="username">
+                                <label for="username">Login:</label>
+        
+                                <input class="textboxusername" type="text" id="username" name="username" required>
+                            </div>
+        
+                            <div class="password">
+                                <label for="pass">Senha:</label>
+                                
+                                <input class="textboxpassword" type="password" id="pass" name="password" minlength="8" required>
+                            </div>
+                            
+                            <input class="entrar" type="submit" value="Entrar">
+        
+                            <button class="criarConta">Criar Conta</button>
+                        </div>
+                    </form>
+                </section>
             </div>
 
             <div class="images">
-                <div class="image1">
-                    <img src="images/indexDog1.png" alt="Desenho de cachorro 1">
-                </div>
+                <img class="dog1" src="images/indexDog1.png" alt="Desenho de cachorro 1">
 
-                <div class="image2">
-                    <img src="images/indexDog2.png" alt="Desenho do cachorro 2">
-                </div>
+                <img class="dog2" src="images/indexDog2.png" alt="Desenho do cachorro 2">
             </div>
         </div>
     </body>

@@ -8,9 +8,10 @@ body {
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
+
 
 .centerText {
     display: flex;
@@ -19,10 +20,23 @@ body {
     justify-content: space-between;
 
     width: 67.03%;
-    height: 75.28%;
+    height: 95.65%;
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.doLogin {
+    width: 72.65%;
+    height: 38.33%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText form {
+    width: 100%;
+    height: 100%;
 }
 
 .titulo {
@@ -35,12 +49,12 @@ body {
     margin-right: auto;
 
     width: 78.13%;
-    height: 54.12%;
+    height: 55.35%;
 }
 
 .logo {
-    width: 100%;
-    height: 91.43%;
+    width: 1005.5px;
+    height: 88.89%;
 
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +65,7 @@ body {
     padding: 0;
 
     width: 100%;
-    height: 8.57%;
+    height: 8.89%;
 
     display: flex;
     align-items: center;
@@ -60,8 +74,7 @@ body {
     font-family: Cherry Bomb;
     font-style: normal;
     font-weight: normal;
-    font-size: 5.92vh;
-    line-height: 6vh;
+    font-size: 4rem;
 
     color: #000000;
 }
@@ -72,10 +85,9 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    width: 48.69vw;
-    height: 21.64%;
+    width: 100%;
+    height: 100%;
 
-    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -87,26 +99,25 @@ body {
     margin: 0 0 0 0;
 
     width: 100%;
-    height: 37.5%;
+    height: 16.67%;
 }
 
-.username p {
-    margin: 1.2vh 0 1.2vh 0;
-    padding: 0;
+.username label {
+    margin: 19.7% 0 19.7% 0;
 
     margin-left: 0;
     margin-right: 0;
     margin-bottom: auto;
     margin-top: auto;
 
-    width: 9.79vw;
-    height: 3.70vh;
+    width: 20.11%;
+    height: 60.6%;
     
     font-family: Cherry Bomb;
     font-style: normal;
     font-weight: normal;
-    font-size: 5.92vh;
-    line-height: 3.15vh;
+    font-size: 4rem;
+    line-height: 2.125rem;
 
     color: #000000;
 }
@@ -116,35 +127,36 @@ body {
     height: 100%;  
 
     background: #FFFFFF;
-    border-radius: 45.45%;
+    border: 2px solid #000000;
+    border-radius: 40px;
 }
 
 .password {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin: 0 0 0 0;
 
     width: 100%;
-    height: 37.5%;
+    height: 16.67%;
 }
 
-.password p {
-    margin: 1.2vh 0 1.2vh 0;
-    padding: 0;
+.password label {
+    margin: 19.7% 0 19.7% 0;
 
     margin-left: 0;
     margin-right: 0;
     margin-bottom: auto;
     margin-top: auto;
 
-    width: 9.79vw;
-    height: 3.70vh;
+    width: 20.11%;
+    height: 60.6%;
     
     font-family: Cherry Bomb;
     font-style: normal;
     font-weight: normal;
-    font-size: 5.92vh;
-    line-height: 3.15vh;
+    font-size: 4rem;
+    line-height: 2.125rem;
 
     color: #000000;
 }
@@ -154,25 +166,54 @@ body {
     height: 100%;  
 
     background: #FFFFFF;
-    border-radius: 30px;
+    border: 2px solid #000000;
+    border-radius: 40px;
+}
+
+.entrar{
+    width: 25%;
+    height: 16.67%;
+
+    background-color: #04AA6D;
+    border: 3px solid #000000;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 2.125rem;
+}
+
+.criarConta {
+    width: 50%;
+    height: 16.67%;
+
+    background-color: #FFD666;
+    border: 3px solid #000000;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 2.125rem;
 }
 
 .images {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 52.59vh;
+    position: relative;
+    top: -43.06%;
 
-    width: 100vw;
-    height: 47.4vh;
+    width: 100%;
+    height: 47.41%;
 }
 
-.image1 {
-    width: 26.67vw;
-    height: 47.4vh;
+.dog1 {
+    width: 26.67%;
+    height: 100%;
 }
 
-.image2 {
-    width: 26.67vw;
-    height: 47.4vh;
+.dog2 {
+    width: 26.67%;
+    height: 100%;
 }
