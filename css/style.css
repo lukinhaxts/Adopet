@@ -3,32 +3,176 @@ body {
     height: 100%;
     margin: 0 auto;
     top: 0px;
-    min-width: 800px;
-    max-width: 1920px;
-    min-height: 600px;
-    max-height: 1080px;
 
     background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
 }
 
 .container {
-    display: block;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 
-.centerText{
+.centerText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 67.03%;
+    height: 75.28%;
+
     margin-left: auto;
     margin-right: auto;
 }
 
 .titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 78.13%;
+    height: 54.12%;
+}
+
+.logo {
+    width: 100%;
+    height: 91.43%;
+
     margin-left: auto;
     margin-right: auto;
 }
 
-h2 {
+.titulo h2 {
+    margin: 0 0 0 0;
+    padding: 0;
+
+    width: 100%;
+    height: 8.57%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.92vh;
+    line-height: 6vh;
+
+    color: #000000;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 48.69vw;
+    height: 21.64%;
+
+    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 0 0;
+
+    width: 100%;
+    height: 37.5%;
+}
+
+.username p {
+    margin: 1.2vh 0 1.2vh 0;
+    padding: 0;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    width: 9.79vw;
+    height: 3.70vh;
+    
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.92vh;
+    line-height: 3.15vh;
+
+    color: #000000;
+}
+
+.textboxusername {
+    width: 78.60%;
+    height: 100%;  
+
+    background: #FFFFFF;
+    border-radius: 45.45%;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    width: 100%;
+    height: 37.5%;
+}
+
+.password p {
+    margin: 1.2vh 0 1.2vh 0;
+    padding: 0;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+
+    width: 9.79vw;
+    height: 3.70vh;
+    
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.92vh;
+    line-height: 3.15vh;
+
+    color: #000000;
+}
+
+.textboxpassword {
+    width: 78.60%;
+    height: 100%;  
+
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 52.59vh;
+
+    width: 100vw;
+    height: 47.4vh;
+}
+
+.image1 {
+    width: 26.67vw;
+    height: 47.4vh;
+}
+
+.image2 {
+    width: 26.67vw;
+    height: 47.4vh;
 }
