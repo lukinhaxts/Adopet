@@ -1,16 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AdoPet</title>
-    <link rel="icon" type="imagem/png" href="images/favicon.png" />
-</head>
-<body>
-    <div class="container">
+        <title>AdoPet</title>
+        <link rel="icon" type="imagem/png" href="images/favicon.png" />
 
-    </div>
-</body>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
+    </head>
+
+    <body class="mainPage">
+        <div class="gridSpace">
+            <div class="filtros">
+                <div class="titulo-filtro">
+                    <h1>Filtros</h1>
+                </div>
+
+                <div class="raca">
+                    <h1>Raça:</h1>
+
+                    <select name="raca">
+                        <option value="shih" selected>Shih Tzu</option>
+                        <option value="dob">Dobberman</option>
+                        <option value="pastorale">Pastor Alemão</option>
+                        <option value="yorks">Yorkshire</option>
+                        <option value="sr">Sem Raça</option>
+                    </select>
+                </div>
+
+                <div class="idade">
+                    <h2>Idade:</h2>
+
+                    <input class="idadeNum" type="number" min="0" max="15">
+
+                    <h2>a</h2>
+
+                    <input class="idadeNum" type="number" min="0" max="15">
+
+                    <h2>anos</h2>
+                </div>
+
+                <div>
+                    <input class="aplicarFiltros" type="button" value="Aplicar Filtros">
+                </div>
+
+                <div>
+                    <input class="cadastrarDog" type="button" value="Cadastrar Novo Dog">
+                </div>
+
+                <div class="sexo">
+                    <h2>Sexo:</h2>
+
+                    <select name="sexo">
+                        <option value="m">Macho</option>
+                        <option value="f">Fêmea</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="gridDogs">
+                <div class="buttonDog"> 
+                    <a href="">
+                        <img class="dogsToAdopt" src="images/adoptDog1.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3 class="nomeDog">Tobby</h3>
+                                <h4 class="idadeDog">5 Meses</h4>
+                                <h4 class="racaDog">Sem Raça</h4>
+                            </div>
+
+                            <img class="sexoDogs sexoDog1" src="images/macho.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonDog">
+                    <a href="">
+                        <img class="dogsToAdopt" src="images/adoptDog2.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3>Billy</h3>
+                                <h4>2 Meses</h4>
+                                <h4>Sem Raça</h4>
+                            </div>
+
+                            <img class="sexoDogs sexoDog2" src="images/macho.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonDog">
+                    <a href="">
+                        <img class="dogsToAdopt" src="images/adoptDog3.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3>Hanna</h3>
+                                <h4>1 Ano e 2 Meses</h4>
+                                <h4>Shih Tzu</h4>
+                            </div>
+        
+                            <img class="sexoDogs sexoDog3" src="images/femea.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonDog">
+                    <a href="">
+                        <img class="dogsToAdopt"src="images/adoptDog2.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3>Buddy</h3>
+                                <h4>3 Anos</h4>
+                                <h4>Dobberman</h4>
+                            </div>
+
+                            <img class="sexoDogs sexoDog4" src="images/macho.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonDog">
+                    <a href="">
+                        <img class="dogsToAdopt"src="images/adoptDog3.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3>Luke</h3>
+                                <h4>1 Ano e 6 Meses</h4>
+                                <h4>Pastor Alemão</h4>
+                            </div>
+
+                            <img class="sexoDogs sexoDog5" src="images/macho.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="buttonDog">
+                    <a href="">
+                        <img class="dogsToAdopt"src="images/adoptDog1.png" alt="">
+
+                        <div class="cabecalho">
+                            <div class="cabecalhoGrid">
+                                <h3>Jully</h3>
+                                <h4>10 Meses</h4>
+                                <h4>Yorkshire</h4>
+                            </div>
+
+                            <img class="sexoDogs sexoDog6" src="images/femea.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
