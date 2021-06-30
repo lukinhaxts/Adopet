@@ -36,7 +36,7 @@
     width: 364.08px;
 }
 
-input[type=text], input[type=password], input[type=number], input[type=tel] {
+input[type=text], input[type=password], input[type=number], input[type=tel], input[type='email'] {
     width: 100%;
     border-color: black;
     border-radius: 25px;
