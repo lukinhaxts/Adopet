@@ -36,7 +36,7 @@
     width: 364.08px;
 }
 
-input[type=text], input[type=password], input[type=number] {
+input[type=text], input[type=password], input[type=number], input[type=tel] {
     width: 100%;
     border-color: black;
     border-radius: 25px;
@@ -54,7 +54,7 @@ input[type=text], input[type=password], input[type=number] {
     text-align: center;
 }
 
-input[type=button]{
+input[type=button], input[type=submit] {
     background-color: #4CAF50;
     border: none;
     border-radius: 15px;
@@ -110,7 +110,7 @@ input[type=button]:active {
     margin: 0 auto;
     top: 0px;
 
-    background-color: #FFD666;
+    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
 }
 
 .gridSpace {
@@ -118,7 +118,7 @@ input[type=button]:active {
     height: 1120px;
     margin: 60px auto;
     
-    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
+    background-color: #FFD666;
     border: 5px solid #0500FF;
     border-radius: 90px 90px 90px 90px;
 }
@@ -129,14 +129,14 @@ input[type=button]:active {
     justify-content: space-between;
     align-items: center;
 
-    width: 1209.47px;
+    width: 1162.32px;
     height: 169.24px;
     margin: 0 auto;
     margin-top: 51.2px;
 
-    border-radius: 20px;
+    border-radius: 40px;
     border: 3px solid #0500FF; 
-    background-color: #fd3434;
+    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%) !important;
 }
 
 .filtros h1, .filtros h2 {
@@ -193,26 +193,32 @@ input[type=button]:active {
 
     padding: 12.31px 45.725px;
 
-    width: 500px;
+    width: 450px;
     height: 60px;
 }
 
 .idadeNum {
     margin: 0 !important;
-    width: 80px !important;
+    width: 90px !important;
     height: 60px !important;
+}
+
+.divAplicarFiltros {
+    display: flex;
+    margin: 0 auto;
+    width: 250px !important;
+    height: 58px !important;
 }
 
 .aplicarFiltros {
     padding: 0 !important;
-    width: 250px !important;
-    height: 50px !important;
+    width: 100%;
 
     -webkit-appearance: none;
 }
 
 .cadastrarDog {
-    background-color: #FFD666 !important;
+    background-color: #fd3434 !important;
     padding: 0 !important;
     width: 330px !important;
     height: 50px !important;
@@ -244,7 +250,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .dogsToAdopt {
-    border: 3px solid red;
+    border: 3px solid #0500FF;
     display: flex;
     margin: auto;
 
@@ -259,8 +265,9 @@ input[type=number]::-webkit-inner-spin-button {
     grid-template-columns: 81.14% 18.86%;
     margin: 0 auto;
     width: 350px;
-    height: 157px;
+    height: 155px;
 
+    border-top: 2px solid #0500FF;
     border-radius: 0 0 36px 36px;
 
     position: relative;
@@ -298,3 +305,177 @@ input[type=number]::-webkit-inner-spin-button {
 .buttonDog a{
     text-decoration: none;
 }
+
+/* CSS - createAccountPage */
+
+.createAccountPage {
+    width: 1366px;
+    height: 768px;
+
+    margin: 0 auto;
+    top: 0px;
+
+    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.contentCreateAccount {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.createAccountTitle {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 168px;
+
+    background-color: #FFD666;
+    border: 3px solid #0500FF;
+    border-radius: 40px;
+}
+
+.createAccountForm {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 200px 200px 200px 100px;
+    height: 700px;
+
+    background-color: #FFD666;
+    border: 3px solid #0500FF;
+    border-radius: 40px;
+}
+
+.but {
+    grid-column: 1 / span 2;
+}
+
+.createAccountForm div {
+    justify-self: center;
+    align-self: center;
+}
+
+.createAccountForm input[type=text], .createAccountForm input[type=password], .createAccountForm input[type=tel] {
+    display: block;
+    width: 550px;
+}
+
+.logoCreateAccount {
+    margin: 0 auto;
+    height: 120px;
+}
+
+.createAccountTitle h2{
+    padding: 16.5px;
+    margin: auto;
+    height: 40px;
+}
+
+/* CSS - Cadastrar novo dog */
+
+.cadastrarDogPage {
+    width: 1366px;
+    height: 2030px;
+
+    margin: 0 auto;
+    top: 0px;
+
+    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.gridCadastroDog {
+    width: 1236px;
+    height: 1900px;
+    margin: 60px 60px;
+    display: flex;
+
+    background-color: #FFD666;
+    border: 5px solid #0500FF;
+    border-radius: 90px 90px 90px 90px;
+}
+
+.formCadastroDog {
+    display: grid;
+    grid-template-rows: 1fr 3.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+    width: 1200px;
+    height: 1800px;
+    margin: auto;
+}
+
+.formCadastroDog label {
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: black;
+    text-align: center;
+    outline: 0;
+}
+
+.formCadastroDog div {
+    margin-bottom: 30px;
+}
+
+.nomeDogCad {
+    margin: 0 auto;
+}
+
+.labelNameDog {
+
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+}
+
+#nameDog {
+    margin-left: 50px;
+    height: 60px;
+    width: 600px;
+}
+
+.formCadastroDog div {
+    display: flex;
+    align-items: center;
+}
+
+.fotosDogCad {
+    display: grid;
+    width: 1100px;
+    height: 340px;
+    margin: 0 auto;
+    overflow-x: scroll;
+
+    background-color: white;
+    border-radius: 40px 40px 15px 15px;
+    border: 5px solid blue
+}
+
+.fotosDogCad::-webkit-scrollbar {
+    border-radius: 40px;
+}
+
+.fotosDogCad::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background-color: #fd3434;
+}
+
+.addPic {
+    min-width: 300px;
+    height: 300px;
+    margin: 0 20px !important;
+
+    background-color: #c4c4c4;
+    border-radius: 40px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.addPic label {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url("/images/sinalMais.png");
+  }

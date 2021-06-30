@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Crie Sua Conta</title>
+        <link rel="icon" type="imagem/png" href="images/favicon.png" />
+
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
+    </head>
+
+    <body class="createAccountPage">
+        <div class="contentCreateAccount">
+            <style>
+                .ui-widget-header,.ui-state-default, ui-button {
+                   background:#b9cd6d;
+                   border: 1px solid #b9cd6d;
+                   color: #FFFFFF;
+                   font-weight: bold;
+                }
+            </style>
+            <div class="createAccountTitle">
+                <img class="logoCreateAccount" src="images/logoAPP.png" alt="Logo do Aplicativo">
+        
+                <h2>Participe da nossa comunidade!!</h2>
+            </div>
+
+            <div>
+                <form action="" autocomplete="off" class="createAccountForm" onsubmit="location.href='index.html'">
+                    <div>
+                        <label class="labelLogin" for="username" autocomplete="off">Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div>
+                        <label class="labelLogin" for="email" autocomplete="off">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label class="labelLogin" for="phone" autocomplete="off">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required="" pattern="[(][1-9]{2}[)] [ ] [9][0-9]{4}[-][0-9]{5} " placeholder="(xx) 9xxxx-xxxx" minlength="15" maxlength="15" onkeypress="telefone(this)">
+                        <script type="text/javascript">
+                            function telefone(telefone){
+                                if(telefone.value.length == 0)
+                                    telefone.value = '(' + telefone.value;
+                                if(telefone.value.length == 3)
+                                    telefone.value = telefone.value + ') ';
+                                if(telefone.value.length == 10)
+                                    telefone.value = telefone.value + '-';
+                            }
+                        </script>
+                    </div>
+
+                    <div>
+                        <label class="labelLogin" for="cpf" autocomplete="off">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required="" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" minlength="14" maxlength="14" onkeypress="cpfV(this)">
+                        <script type="text/javascript">
+                            function cpfV(cpf){
+                                if(cpf.value.length == 3)
+                                    cpf.value = cpf.value + '.';
+                                if(cpf.value.length == 7)
+                                    cpf.value = cpf.value + '.';
+                                if(cpf.value.length == 11)
+                                    cpf.value = cpf.value + '-';
+                            }
+                        </script>
+                    </div>
+
+                    <div>
+                        <label class="labelLogin" for="password" autocomplete="off">Senha (8 a 10 caracteres):</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="10" required="">
+                    </div>
+
+                    <div>
+                        <label class="labelLogin" for="password1" autocomplete="off">Confirmar Senha:</label>
+                        <input type="password" id="password2" name="password2" minlength="8" maxlength="10" >
+                    </div>
+
+                    <div class="but">
+                        <input type="submit" value="Cadastrar-se" onclick="validarConta('password','password2')">
+                        <script type="text/javascript">
+
+                            function validarConta(name1, name2)
+                            {
+                                var contaValida = 0
+                                var senha1 = document.getElementById(name1).value;
+                                var senha2 = document.getElementById(name2).value;
+
+                                if(((senha1.length >= 8) && (senha1.length <= 10)) && ((senha2.length >= 8) && (senha2.length <= 10)))
+                                {
+                                    if(senha1 != "" && senha2 != "" && senha1 === senha2)
+                                    {
+                                    }
+                                    else {
+                                        alert('Senhas diferentes!');
+                                    }
+                                }
+                                else {
+                                    alert('Senha deve conter de 8 a 10 caracteres!');
+                                }
+                            }
+                        </script>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

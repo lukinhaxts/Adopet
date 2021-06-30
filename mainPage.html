@@ -34,21 +34,21 @@
                 <div class="idade">
                     <h2>Idade:</h2>
 
-                    <input class="idadeNum" type="number" min="0" max="15">
+                    <input class="idadeNum" type="number" min="0" max="15" maxlength = "2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
                     <h2>a</h2>
 
-                    <input class="idadeNum" type="number" min="0" max="15">
+                    <input class="idadeNum" type="number" min="0" max="15" maxlength = "2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
 
                     <h2>anos</h2>
                 </div>
 
-                <div>
+                <div class="divAplicarFiltros">
                     <input class="aplicarFiltros" type="button" value="Aplicar Filtros">
                 </div>
 
                 <div>
-                    <input class="cadastrarDog" type="button" value="Cadastrar Novo Dog">
+                    <input class="cadastrarDog" type="button" value="Cadastrar Novo Dog" onclick="location.href='cadastrarDog.html'">
                 </div>
 
                 <div class="sexo">
