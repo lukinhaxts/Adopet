@@ -354,7 +354,6 @@ input[type=number]::-webkit-inner-spin-button {
     justify-self: center;
     align-self: center;
 }
-
 .createAccountForm input[type=text], .createAccountForm input[type=password], .createAccountForm input[type=tel] {
     display: block;
     width: 550px;
@@ -478,4 +477,5 @@ input[type='file'] {
     height: 100px;
     margin: auto;
     background-image: url("/images/sinalMais.png");
-  }
+}
+

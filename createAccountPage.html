@@ -29,20 +29,20 @@
             </div>
 
             <div>
-                <form action="" autocomplete="off" class="createAccountForm" onsubmit="location.href='index.html'">
+                <form method="post" action="" autocomplete="off" class="createAccountForm" onsubmit="location.href='index.html'">
                     <div>
-                        <label class="labelLogin" for="username" autocomplete="off">Usuário:</label>
+                        <label class="labelLogin" for="username">Usuário:</label>
                         <input type="text" id="username" name="username" required>
                     </div>
 
                     <div>
-                        <label class="labelLogin" for="email" autocomplete="off">Email:</label>
-                        <input type="text" id="email" name="email" required>
+                        <label class="labelLogin" for="email">Email:</label>
+                        <input type="text" id="email" name="email" autocomplete="on" required>
                     </div>
 
                     <div>
-                        <label class="labelLogin" for="phone" autocomplete="off">Telefone:</label>
-                        <input type="tel" id="phone" name="phone" required="" pattern="[(][1-9]{2}[)] [ ] [9][0-9]{4}[-][0-9]{5} " placeholder="(xx) 9xxxx-xxxx" minlength="15" maxlength="15" onkeypress="telefone(this)">
+                        <label class="labelLogin" for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required="" pattern="\([1-9]{2}\) [9][0-9]{4}\-[0-9]{4}" placeholder="(xx) 9xxxx-xxxx" onkeypress="telefone(this)">
                         <script type="text/javascript">
                             function telefone(telefone){
                                 if(telefone.value.length == 0)
@@ -56,7 +56,7 @@
                     </div>
 
                     <div>
-                        <label class="labelLogin" for="cpf" autocomplete="off">CPF:</label>
+                        <label class="labelLogin" for="cpf">CPF:</label>
                         <input type="text" id="cpf" name="cpf" required="" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" minlength="14" maxlength="14" onkeypress="cpfV(this)">
                         <script type="text/javascript">
                             function cpfV(cpf){
@@ -71,12 +71,12 @@
                     </div>
 
                     <div>
-                        <label class="labelLogin" for="password" autocomplete="off">Senha (8 a 10 caracteres):</label>
+                        <label class="labelLogin" for="password">Senha (8 a 10 caracteres):</label>
                         <input type="password" id="password" name="password" minlength="8" maxlength="10" required="">
                     </div>
 
                     <div>
-                        <label class="labelLogin" for="password1" autocomplete="off">Confirmar Senha:</label>
+                        <label class="labelLogin" for="password1">Confirmar Senha:</label>
                         <input type="password" id="password2" name="password2" minlength="8" maxlength="10" >
                     </div>
 
@@ -94,6 +94,7 @@
                                 {
                                     if(senha1 != "" && senha2 != "" && senha1 === senha2)
                                     {
+                                        contaValida = 1;
                                     }
                                     else {
                                         alert('Senhas diferentes!');
