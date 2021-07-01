@@ -29,7 +29,7 @@
             </div>
 
             <div>
-                <form action="index.html" method="post" autocomplete="off" class="createAccountForm">
+                <form action="index.html" autocomplete="off" class="createAccountForm">
                     <div>
                         <label class="labelLogin" for="username">Usuário:</label>
                         <input type="text" id="username" name="username" required>
@@ -57,7 +57,7 @@
 
                     <div>
                         <label class="labelLogin" for="cpf">CPF:</label>
-                        <input type="text" id="cpf" name="cpf" required pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" minlength="14" maxlength="14" onkeypress="cpfV(this)">
+                        <input type="text" id="cpf" name="cpf" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" placeholder="xxx.xxx.xxx-xx" minlength="14" maxlength="14" onkeypress="cpfV(this)" onblur="TestaCPF(this)">
                         <script type="text/javascript">
                             function cpfV(cpf){
                                 if(cpf.value.length == 3)
@@ -94,14 +94,16 @@
                                 {
                                     if(senha1 != "" && senha2 != "" && senha1 === senha2)
                                     {
-                                        contaValida = 1;
+                                        alert('Conta criada com sucesso!');
                                     }
                                     else {
                                         alert('Senhas diferentes!');
+                                        event.preventDefault();
                                     }
                                 }
                                 else {
                                     alert('Senha deve conter de 8 a 10 caracteres!');
+                                    event.preventDefault();
                                 }
                             }
                         </script>

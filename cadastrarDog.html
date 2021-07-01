@@ -14,9 +14,9 @@
 <body class="cadastrarDogPage">
     <div class="gridCadastroDog">
         <form class="formCadastroDog" autocomplete="off">
-            <div class="nomeDogCad">
+            <div class="normalLabel nomeDogCad">
                 <label class="labelNameDog" for="nameDog">Nome do Cachorro:</label>
-                <input type="text" id="nameDog" name="nameDog">
+                <input required type="text" id="nameDogCad" name="nameDog">
             </div>
     
             <div class="fotosDogCad">
@@ -38,40 +38,64 @@
                 </div>
             </div>
     
-            <div class="idadeDogCad">
-    
+            <div class="normalLabel idadeDogCad">
+                <label class="labelIdadeDog" for="idadeDog">Idade:</label>
+                <input required type="text" id="idadeDogCad" name="idadeDog">
             </div>
     
-            <div class="sexoDogCad">
-    
+            <div class="normalLabel sexoDogCad">
+                <label class="labelSexoDog" for="sexoDog">Sexo:</label>
+                <select required name="sexoDog" id="sexoDogCad">
+                    <option value="m">Macho</option>
+                    <option value="f">Fêmea</option>
+                </select>
             </div>
     
-            <div class="racaDogCad">
-    
+            <div class="normalLabel racaDogCad">
+                <label class="labelRacaDog" for="RacaDog">Raça:</label>
+                <select required name="racaDog" id="racaDogCad">
+                    <option value="shih">Shih Tzu</option>
+                    <option value="dob">Dobberman</option>
+                    <option value="pastorale">Pastor Alemão</option>
+                    <option value="yorks">Yorkshire</option>
+                    <option value="sr">Sem Raça</option>
+                </select>
             </div>
     
-            <div class="corDoPeloDogCad">
-    
+            <div class="normalLabel corDoPeloDogCad">
+                <label class="labelCorDoPeloDog" for="corDoPeloDog">Cor do pelo:</label>
+                <input required type="text" id="corDoPeloDogCad" name="corDoPeloDog">
             </div>
     
-            <div class="castradoDogCad">
-    
+            <div class="normalLabel castradoDogCad">
+                <label class="labelCastradoDogCad" for="castradoDog">Castrado?</label>
+                <select id="castradoDogCad" name="castradoDog">
+                    <option value="s">Sim</option>
+                    <option value="n" selected>Não</option>
+                </select>
             </div>
     
-            <div class="vacinadoDogCad">
-    
+            <div class="normalLabel vacinadoDogCad">
+                <label class="labelVacinadoDogCad" for="vacinadoDog">Vacinação?</label>
+                <select id="vacinadoDogCad" name="vacinadoDog">
+                    <option value="parc">Parcial</option>
+                    <option value="comp">Completa</option>
+                    <option value="nen" selected>Nenhuma</option>
+                </select>
             </div>
     
-            <div class="telefoneDonoDogCad">
-    
+            <div class="normalLabel telefoneDonoDogCad">
+                <label class="labelTelefoneDonoDogCad" for="telefoneDonoDog">Telefone para contato:</label>
+                <input required type="tel" id="telefoneDonoDogCad" name="telefoneDonoDog">
             </div>
     
-            <div class="obsDogCad">
-    
+            <div class="normalLabel obsDogCad">
+                <label class="labelObsDogCad" for="obsDog">Observações:</label>
+                <textarea required id="obsDogCad" name="obsDog" rows="3"></textarea>
             </div>
     
-            <div class="cadButton">
-    
+            <div class="normalLabel cadButton">
+                <input class="cadastroDogCompleted" type="button" value="Cadastrar Dog" onclick="location.href='/mainPage.html'">
             </div>
         </form>
     </div>
