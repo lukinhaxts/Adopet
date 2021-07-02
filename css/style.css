@@ -302,8 +302,15 @@ input[type=number]::-webkit-inner-spin-button {
     height: 34px;
 }
 
-.buttonDog a{
+.buttonDog {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.buttonDog a {
     text-decoration: none;
+    height: 350px;
 }
 
 /* CSS - createAccountPage */
@@ -354,7 +361,7 @@ input[type=number]::-webkit-inner-spin-button {
     justify-self: center;
     align-self: center;
 }
-.createAccountForm input[type=text], .createAccountForm input[type=password], .createAccountForm input[type=tel] {
+.createAccountForm input[type=text], .createAccountForm input[type=password],  .createAccountForm input[type=tel], .createAccountForm input[type=email]{
     display: block;
     width: 550px;
 }
@@ -520,4 +527,130 @@ input[type='file'] {
 
 .cadButton {
     margin: 0 auto;
+}
+
+/* CSS - paginaDog */
+
+.paginaDogPage {
+    width: 1366px;
+    height: 768px;
+
+    margin: 0 auto;
+    top: 0px;
+
+    background: linear-gradient(287.56deg, #29B6D1 0%, #00C7C7 100%);
+}
+
+.gridDadosDog {
+    width: 1236px;
+    height: 1900px;
+    margin: 60px 60px;
+    display: flex;
+
+    background-color: #FFD666;
+    border: 5px solid #0500FF;
+    border-radius: 90px 90px 90px 90px;
+}
+
+.areaInfoDog {
+    display: grid;
+    grid-template-rows: 1fr 3.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 1800px;
+    margin: auto;
+}
+
+.areaInfoDog div {
+    display: flex;
+    align-items: center;
+}
+
+.areaInfoDog label {
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    height: 2rem !important;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    outline: 0;
+}
+
+.nomeDogTitle {
+    font-size: 4rem !important;
+    line-height: 4rem !important;
+    height: 4rem !important;
+
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    outline: 0;
+    margin: auto;
+}
+
+.caixaDeInfoDog {
+    margin-left: 50px;
+    height: 60px;
+    width: 600px;
+
+    background-color: white;
+    border: 2px solid #0500FF;
+    border-radius: 40px;
+}
+
+.caixaDeInfoDog h2 {
+    font-family: Cherry Bomb;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    height: 2rem !important;
+    color: black;
+    text-align: center;
+    outline: 0;
+    margin: auto;
+}
+
+.fotosDogAtual {
+    display: grid;
+    width: 1100px;
+    height: 340px;
+    margin: 0 auto;
+    overflow-x: scroll;
+
+    background-color: white;
+    border-radius: 40px 40px 15px 15px;
+    border: 5px solid #0500FF;
+}
+
+.fotosDogAtual::-webkit-scrollbar {
+    border-radius: 40px;
+}
+
+.fotosDogAtual::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background-color: #fd3434;
+}
+
+.pic {
+    min-width: 300px;
+    height: 300px;
+    margin: 0 20px !important;
+
+    background-color: #c4c4c4;
+    border-radius: 40px;
+}
+
+.pic label {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-image: url("/images/sinalMais.png");
 }
