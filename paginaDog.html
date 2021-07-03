@@ -15,58 +15,90 @@
         <div class="gridDadosDog">
             <div class="areaInfoDog">
                 <div class="dadoNomeDog">
-                    <h2 class="nomeDogTitle">Hanna</h2>
+                    <h1 class="nomeDogTitle">Hanna</h1>
                 </div>
         
                 <div class="fotosDogAtual">
                     <div class="pic pic1">
-                        <label for="file"></label>
+                        <img class="dog" src="images/adoptDog1.png">
                     </div>
-                    <div class="pic pic1">
-                        <label for="file"></label>
+                    <div class="pic pic2">
+                        <img class="dog" src="images//adoptDog2.png">
                     </div>
-                    <div class="pic pic1">
-                        <label for="file"></label>
+                    <div class="pic pic3">
+                        <img class="dog" src="images//adoptDog3.png">
                     </div>
-                    <div class="pic pic1">
-                        <label for="file"></label>
+                    <div class="pic pic4">
+                        <img class="dog" src="images//adoptDog1.png">
                     </div>
                 </div>
         
                 <div class="dadoIdadeDog">
                     <label for="idadeDog">Idade:</label>
+                    <div class="caixaInfoDog">
+                        <p>1 ano e 2 meses</p>
+                    </div>
                 </div>
         
                 <div class="dadoSexoDog">
                     <label for="sexoDog">Sexo:</label>
+                    <div class="caixaInfoDog">
+                        <p>Fêmea</p>
+                    </div>
                 </div>
         
                 <div class="dadoRacaDog">
                     <label for="racaDog">Raça:</label>
+                    <div class="caixaInfoDog">
+                        <p>Shih Tzu</p>
+                    </div>
                 </div>
         
                 <div class="dadoCorDoPeloDog">
                     <label for="corDoPeloDog">Cor do pelo:</label>
+                    <div class="caixaInfoDog">
+                        <p>Preto e branco</p>
+                    </div>
                 </div>
         
                 <div class="dadoCastradoDog">
-                    <label for="castradoDog">Castrado?</label>
+                    <label for="castradoDog">Castrado(a)?</label>
+                    <div class="caixaInfoDog">
+                        <p>Não</p>
+                    </div>
                 </div>
         
                 <div class="dadoVacinadoDog">
-                    <label for="vacinadoDog">Vacinado?</label>
+                    <label for="vacinadoDog">Vacinação?</label>
+                    <div class="caixaInfoDog">
+                        <p>Completa</p>
+                    </div>
                 </div>
         
                 <div class="dadoTelefoneDonoDog">
                     <label for="telefoneDog">Telefone para adoção:</label>
+                    <div class="caixaInfoDog">
+                        <p>(35) 98847-2335</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5535988472335" target="_blank">
+                        <img src="/images/whatsapp.png" alt="Entre em contato AGORA!">
+                    </a>
                 </div>
         
                 <div class="dadoObsDog">
                     <label for="obsDog">Observações:</label>
+                    <div class="caixaInfoDog">
+                        <p class="obsDogAtual">Cachorra muito dócil, adora carinho na barriga. Não possui doença ou deficiência.</p>
+                    </div>
                 </div>
         
                 <div class="adoptButton">
-                    
+                    <input class="adoptDog" type="button" value="Adotar" onclick="confirmaAdocao(); location.href='mainPage.html'">
+                    <script type="text/javascript">
+                        function confirmaAdocao(){
+                            alert('Parabéns pelo gesto!!\nEnviamos o pedido de adoção para a instituição.\nEntraremos em contato com você por Email ou WhatsApp para a formalização.');
+                        }
+                    </script>
                 </div>
             </div>
         </div>
